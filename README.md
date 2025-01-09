@@ -1,44 +1,62 @@
-# PneumoniaDetection
-This is pnuemonia detection project using CNN(Deep Learning)
-Introduction
-This project develops a Convolutional Neural Network (CNN) for automated pneumonia detection from chest X-ray images. It aims to assist healthcare providers with a reliable, efficient diagnostic tool, minimizing the time and subjectivity of manual analysis.
+# Pneumonia Detection Using CNN
+## Introduction
+This project implements a Convolutional Neural Network (CNN) to detect pneumonia from chest X-ray images. The goal is to provide a reliable and efficient diagnostic tool to assist healthcare providers, reducing the time and subjectivity associated with manual analysis.
+---
 
-Purpose:
-Detect pneumonia accurately to improve patient outcomes and support clinical workflows.
+## Purpose
+- **Objective:** Detect pneumonia accurately to improve patient outcomes and streamline clinical workflows.
 
-Significance:
+---
 
-Pneumonia is a critical global health concern requiring timely diagnosis.
-CNNs enable consistent and efficient processing of medical images, reducing diagnostic errors and radiologist workload.
-Literature Review
-Key Study: CheXNet by Rajpurkar et al. demonstrated high accuracy in pneumonia detection, setting a benchmark for CNN-based diagnostics.
-Challenges:
-Limited generalizability across populations and imaging conditions.
-Imbalanced datasets often favor normal cases, requiring augmentation techniques like flipping, rotation, and zooming to enhance learning.
-Methodology
-Dataset and Preprocessing:
+## Significance
+- **Global Health Concern:** Pneumonia is a critical health issue requiring timely and accurate diagnosis.
+- **Efficiency:** CNNs offer consistent and efficient processing of medical images, reducing diagnostic errors and radiologist workload.
 
-Labeled chest X-ray images for pneumonia-positive and negative cases.
-Preprocessing includes normalization and data augmentation for diversity and robustness.
-Model Architecture:
+---
 
-Layers: Convolutional (feature extraction), pooling (dimensionality reduction), and fully connected (classification).
-Activation: ReLU for hidden layers; softmax for output.
-Training Parameters: Learning rate = 0.00001, batch size = 32, epochs = 12.
-Results
-Performance Metrics:
-Accuracy: 91.99%
-Precision: 92%
-Recall: 92%
-F1-score: 92%
-Conclusion
-The project demonstrates the feasibility of CNNs in medical diagnostics, highlighting their potential to:
+## Methodology
 
-Reduce diagnostic time and radiologist workload.
-Improve patient outcomes through early detection.
-Recommendations:
+### Dataset and Preprocessing
+- **Dataset:** Labeled chest X-ray images with pneumonia-positive and pneumonia-negative cases.
+- **Preprocessing:**
+  - Normalization to standardize input data.
+  - Data augmentation for diversity and robustness (e.g., flipping, rotation, zooming).
+ 
+  ### Model Architecture
+1. **Layers:**
+   - **Convolutional Layers:** Feature extraction.
+   - **Pooling Layers:** Dimensionality reduction.
+   - **Fully Connected Layers:** Final classification.
+2. **Activation Functions:**
+   - ReLU for hidden layers.
+   - Softmax for output layer.
+3. **Training Parameters:**
+   - Learning rate: `0.00001`
+   - Batch size: `32`
+   - Epochs: `12`
 
-Integrate the model in clinical workflows as a supplementary tool.
-Regularly update the model with diverse datasets for generalizability.
-Add visualization tools like heatmaps to enhance interpretability.
-For detailed code, refer to the repository files.
+---
+
+## Results
+The model achieved the following performance metrics:
+- **Accuracy:** 91.99%
+- **Precision:** 92%
+- **Recall:** 92%
+- **F1-score:** 92%
+
+---
+
+## Conclusion
+This project demonstrates the feasibility of using CNNs for medical diagnostics, highlighting their potential to:
+- Reduce diagnostic time and radiologist workload.
+- Improve patient outcomes through early detection of pneumonia.
+
+  ## Repository
+- For detailed code and implementation, refer to the repository files.
+
+---
+
+## How to Run the Project
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-username/PneumoniaDetection.git
